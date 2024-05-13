@@ -154,6 +154,7 @@ namespace NETInterrogation_Console_App
             foreach (Polymorphism.Shape shape in shapes)
             {
                 Console.WriteLine($"Area: {shape.Area()}");
+                Console.WriteLine($"Area: {shape.Area(shape.Name)}");
             }
             #endregion
         }
