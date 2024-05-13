@@ -16,7 +16,7 @@ namespace NETInterrogation_Console_App
             //Console.WriteLine("Enter the type of shape you want to calculate:");
             //string Name = Console.ReadLine();
 
-            //if (Name != null)
+            //if (!String.IsNullOrEmpty(Name))
             //{
             //    switch (Name)
             //    {
@@ -25,7 +25,7 @@ namespace NETInterrogation_Console_App
             //            string Radius = Console.ReadLine();
             //            if (double.TryParse(Radius, out double result))
             //            {
-            //                Circle circle = new Circle("Circle", result);
+            //                Inheritance.Circle circle = new Inheritance.Circle("Circle", result);
             //                circle.GetName();
             //                circle.GetArea();
             //                circle.GetCircumference();
@@ -42,7 +42,7 @@ namespace NETInterrogation_Console_App
             //            string Width = Console.ReadLine();
             //            if (double.TryParse(Length, out double result1) && double.TryParse(Width, out double result2))
             //            {
-            //                Rectangle rectangle = new Rectangle("Reactangle", result1, result2);
+            //                Inheritance.Rectangle rectangle = new Inheritance.Rectangle("Reactangle", result1, result2);
             //                rectangle.GetName();
             //                rectangle.GetArea();
             //                rectangle.GetPerimeter();
@@ -57,7 +57,7 @@ namespace NETInterrogation_Console_App
             //            string Length1 = Console.ReadLine();
             //            if (double.TryParse(Length1, out double result3))
             //            {
-            //                Rectangle rectangle = new Rectangle("Square", result3, result3);
+            //                Inheritance.Rectangle rectangle = new Inheritance.Rectangle("Square", result3, result3);
             //                rectangle.GetName();
             //                rectangle.GetArea();
             //                rectangle.GetPerimeter();
@@ -83,7 +83,7 @@ namespace NETInterrogation_Console_App
             //string choice = "";
             //while (choice.ToLower() != "exit")
             //{
-            //    if (AccountNumber != null && double.TryParse(balance, out double balncedAmount))
+            //    if (!String.IsNullOrEmpty(AccountNumber) && double.TryParse(balance, out double balncedAmount))
             //    {
             //        Console.WriteLine("\nChoose an option:");
             //        Console.WriteLine("1. Deposit");
@@ -146,16 +146,16 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region Polymorphism
-            Polymorphism.Shape[] shapes = new Polymorphism.Shape[2];
+            //Polymorphism.Shape[] shapes = new Polymorphism.Shape[2];
 
-            shapes[0] = new Polymorphism.Rectangle(5, 7);
-            shapes[1] = new Polymorphism.Circle(5);
+            //shapes[0] = new Polymorphism.Rectangle(5, 7);
+            //shapes[1] = new Polymorphism.Circle(5);
 
-            foreach (Polymorphism.Shape shape in shapes)
-            {
-                Console.WriteLine($"Area: {shape.Area()}");
-                Console.WriteLine($"Area: {shape.Area(shape.Name)}");
-            }
+            //foreach (Polymorphism.Shape shape in shapes)
+            //{
+            //    Console.WriteLine($"Area: {shape.Area()}");
+            //    Console.WriteLine($"Area: {shape.Area(shape.Name)}");
+            //}
             #endregion
         }
     }
