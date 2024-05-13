@@ -1,6 +1,7 @@
 ﻿using NETInterrogation_Console_App.Abstraction;
 using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
+using NETInterrogation_Console_App.Shallow_Deep_Copy;
 using NETInterrogation_Console_App.Static_Class;
 
 namespace NETInterrogation_Console_App
@@ -160,27 +161,53 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region Static Class
-            Console.WriteLine("Area Calculator");
+            //Console.WriteLine("Area Calculator");
 
-            Console.WriteLine("Circle:");
-            Console.Write("Enter radius: ");
-            double radius = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"Area of circle with radius {radius} = {Geometry.CalculateCircleArea(radius)}");
+            //Console.WriteLine("Circle:");
+            //Console.Write("Enter radius: ");
+            //double radius = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine($"Area of circle with radius {radius} = {Geometry.CalculateCircleArea(radius)}");
 
-            Console.WriteLine("Rectangle:");
-            Console.Write("Enter length: ");
-            double length = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter width: ");
-            double width = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"Area of rectangle with length {length} and width {width} = {Geometry.CalculateRectangleArea(length, width)}");
+            //Console.WriteLine("Rectangle:");
+            //Console.Write("Enter length: ");
+            //double length = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter width: ");
+            //double width = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine($"Area of rectangle with length {length} and width {width} = {Geometry.CalculateRectangleArea(length, width)}");
 
-            Console.WriteLine("Triangle:");
-            Console.Write("Enter base length: ");
-            double baseLength = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter height: ");
-            double height = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"Area of triangle with base length {baseLength} and height {height} = {Geometry.CalculateTriangleArea(baseLength, height)}");
+            //Console.WriteLine("Triangle:");
+            //Console.Write("Enter base length: ");
+            //double baseLength = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter height: ");
+            //double height = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine($"Area of triangle with base length {baseLength} and height {height} = {Geometry.CalculateTriangleArea(baseLength, height)}");
+            #endregion
+
+            #region Shallow-Deep Copy
+            //// Create a person
+            //Person originalPerson = new Person("Souvik", 30);
+            //// Shallow copy
+            //Person shallowCopy = originalPerson.ShallowCopy();
+
+            //// Deep copy
+            //Person deepCopy = originalPerson.DeepCopy();
+
+            //// Modify originalPerson
+            //deepCopy.Name = "Shreya";
+            //deepCopy.Age = 25;
+
+            //// Output
+            //Console.WriteLine("Original Person:");
+            //Console.WriteLine($"Name: {originalPerson.Name}, Age: {originalPerson.Age}");
+
+            //Console.WriteLine("Shallow Copy:");
+            //Console.WriteLine($"Name: {shallowCopy.Name}, Age: {shallowCopy.Age}");
+
+            //Console.WriteLine("Deep Copy:");
+            //Console.WriteLine($"Name: {deepCopy.Name}, Age: {deepCopy.Age}");
+            #endregion
         }
-        #endregion
+
+
     }
 }
