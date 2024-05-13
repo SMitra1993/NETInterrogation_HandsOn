@@ -1,6 +1,7 @@
 ﻿using NETInterrogation_Console_App.Abstraction;
 using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
+using NETInterrogation_Console_App.Static_Class;
 
 namespace NETInterrogation_Console_App
 {
@@ -157,6 +158,29 @@ namespace NETInterrogation_Console_App
             //    Console.WriteLine($"Area: {shape.Area(shape.Name)}");
             //}
             #endregion
+
+            #region Static Class
+            Console.WriteLine("Area Calculator");
+
+            Console.WriteLine("Circle:");
+            Console.Write("Enter radius: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Area of circle with radius {radius} = {Geometry.CalculateCircleArea(radius)}");
+
+            Console.WriteLine("Rectangle:");
+            Console.Write("Enter length: ");
+            double length = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter width: ");
+            double width = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Area of rectangle with length {length} and width {width} = {Geometry.CalculateRectangleArea(length, width)}");
+
+            Console.WriteLine("Triangle:");
+            Console.Write("Enter base length: ");
+            double baseLength = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter height: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Area of triangle with base length {baseLength} and height {height} = {Geometry.CalculateTriangleArea(baseLength, height)}");
         }
+        #endregion
     }
 }
