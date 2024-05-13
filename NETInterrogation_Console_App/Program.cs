@@ -1,4 +1,5 @@
-﻿using NETInterrogation_Console_App.Encapsulation;
+﻿using NETInterrogation_Console_App.Abstraction;
+using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
 
 namespace NETInterrogation_Console_App
@@ -134,6 +135,26 @@ namespace NETInterrogation_Console_App
 
             //    }
             //}
+            #endregion
+
+            #region Encapsulation
+            //Shape circle = new Abstraction.Circle(5);
+            //Shape rectangle = new Abstraction.Rectangle(5, 7);
+
+            //Console.WriteLine($"Circle - Area: ${circle.CalculateArea()}, Circumference: {circle.CalculatePerimeter()} ");
+            //Console.WriteLine($"Rectangle - Area: ${rectangle.CalculateArea()}, Perimeter: {rectangle.CalculatePerimeter()} ");
+            #endregion
+
+            #region Polymorphism
+            Polymorphism.Shape[] shapes = new Polymorphism.Shape[2];
+
+            shapes[0] = new Polymorphism.Rectangle(5, 7);
+            shapes[1] = new Polymorphism.Circle(5);
+
+            foreach (Polymorphism.Shape shape in shapes)
+            {
+                Console.WriteLine($"Area: {shape.Area()}");
+            }
             #endregion
         }
     }
