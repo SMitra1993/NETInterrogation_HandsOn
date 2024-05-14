@@ -208,8 +208,8 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region Delegate
-            Delegate.Employee emp = new Employee();
-            emp.Promote();
+            //Employee emp = new Employee();
+            //emp.Promote();
             #endregion
         }
 
