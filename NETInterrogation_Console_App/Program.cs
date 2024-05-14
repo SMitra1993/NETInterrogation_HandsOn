@@ -206,6 +206,11 @@ namespace NETInterrogation_Console_App
             //Console.WriteLine("Deep Copy:");
             //Console.WriteLine($"Name: {deepCopy.Name}, Age: {deepCopy.Age}");
             #endregion
+
+            #region Delegate
+            Delegate.Employee emp = new Employee();
+            emp.Promote();
+            #endregion
         }
 
 
