@@ -209,7 +209,21 @@ namespace NETInterrogation_Console_App
 
             #region Delegate
             //Employee emp = new Employee();
+
+            //// Simple Delegate
             //emp.Promote();
+            //Console.WriteLine("//////////////////////////////////////////////////////////////");
+            //// Multicasting Delegate
+            //emp.InvokeOperation();
+            //Console.WriteLine("//////////////////////////////////////////////////////////////");
+            //// Predicate Delegate
+            //emp.VerifyCharacters();
+            //Console.WriteLine("//////////////////////////////////////////////////////////////");
+            //// Func Delegate
+            //emp.CalculateArea();
+            //Console.WriteLine("//////////////////////////////////////////////////////////////");
+            //// Action Delegate
+            //emp.Operation();
             #endregion
         }
 
