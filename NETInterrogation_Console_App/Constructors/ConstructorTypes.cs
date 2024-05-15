@@ -64,5 +64,30 @@ namespace NETInterrogation_Console_App.Constructors
             Console.WriteLine("***Static constructor invoked.***");
         }
         #endregion
+
+        #region Constructor Overloading
+        public double Width { get; set; }
+        public double Height { get; set; }
+
+        // Constructor with different types of arguments
+        public ConstructorTypes(double width, double height)
+        {
+            Width = width;
+            Height = height;
+        }
+
+        // Constructor with different number of arguments
+        public ConstructorTypes(double width)
+        {
+            Width = width;
+            Height = width; // Square by default
+        }
+
+        // Method to calculate area
+        public double CalculateArea()
+        {
+            return Width * Height;
+        }
+        #endregion
     }
 }
