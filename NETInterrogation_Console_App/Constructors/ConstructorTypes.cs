@@ -88,5 +88,13 @@ namespace NETInterrogation_Console_App.Constructors
             return Width * Height;
         }
         #endregion
+
+        #region Destructure
+        // Destructor
+        ~ConstructorTypes()
+        {
+            Console.WriteLine("Destructor called.");
+        }
+        #endregion
     }
 }

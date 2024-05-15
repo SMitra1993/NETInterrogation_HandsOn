@@ -140,7 +140,7 @@ namespace NETInterrogation_Console_App
             //}
             #endregion
 
-            #region Encapsulation
+            #region Abstraction
             //Shape circle = new Abstraction.Circle(5);
             //Shape rectangle = new Abstraction.Rectangle(5, 7);
 
@@ -228,31 +228,31 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region Constructors
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Default Constructor");
-            ConstructorTypes types = new ConstructorTypes();
-            Console.WriteLine($"Car: {types.Year} {types.Make} {types.Model}");
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Parameterized Constructor");
-            ConstructorTypes car = new ConstructorTypes("Toyota", "Camry", 2020);
-            Console.WriteLine($"Car: {car.Year} {car.Make} {car.Model}");
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Copied Constructor");
-            ConstructorTypes copiedCar = new ConstructorTypes(car);
-            Console.WriteLine($"Copied Car: {copiedCar.Year} {copiedCar.Make} {copiedCar.Model}");
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Private Constructor");
-            ConstructorTypes.GetInstance();
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Static Constructor");
-            Console.WriteLine($"Count: {ConstructorTypes.Count}");
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Constructor Overloading");
-            ConstructorTypes area1 = new ConstructorTypes(7,8);
-            Console.WriteLine($"Area 1: {area1.CalculateArea()}");
-            ConstructorTypes area2 = new ConstructorTypes(8);
-            Console.WriteLine($"Area 2: {area2.CalculateArea()}; Width: {area2.Width}; Height: {area2.Height}");
-            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Default Constructor");
+            //ConstructorTypes types = new ConstructorTypes();
+            //Console.WriteLine($"Car: {types.Year} {types.Make} {types.Model}");
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Parameterized Constructor");
+            //ConstructorTypes car = new ConstructorTypes("Toyota", "Camry", 2020);
+            //Console.WriteLine($"Car: {car.Year} {car.Make} {car.Model}");
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Copied Constructor");
+            //ConstructorTypes copiedCar = new ConstructorTypes(car);
+            //Console.WriteLine($"Copied Car: {copiedCar.Year} {copiedCar.Make} {copiedCar.Model}");
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Private Constructor");
+            //ConstructorTypes.GetInstance();
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Static Constructor");
+            //Console.WriteLine($"Count: {ConstructorTypes.Count}");
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Constructor Overloading");
+            //ConstructorTypes area1 = new ConstructorTypes(7,8);
+            //Console.WriteLine($"Area 1: {area1.CalculateArea()}");
+            //ConstructorTypes area2 = new ConstructorTypes(8);
+            //Console.WriteLine($"Area 2: {area2.CalculateArea()}; Width: {area2.Width}; Height: {area2.Height}");
+            //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
             #endregion
         }
 
