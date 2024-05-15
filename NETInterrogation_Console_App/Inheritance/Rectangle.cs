@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace NETInterrogation_Console_App.Inheritance
+﻿namespace NETInterrogation_Console_App.Inheritance
 {
     public class Rectangle: Feature
     {

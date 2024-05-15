@@ -1,4 +1,5 @@
 ﻿using NETInterrogation_Console_App.Abstraction;
+using NETInterrogation_Console_App.Constructors;
 using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
 using NETInterrogation_Console_App.Shallow_Deep_Copy;
@@ -27,10 +28,10 @@ namespace NETInterrogation_Console_App
             //            string Radius = Console.ReadLine();
             //            if (double.TryParse(Radius, out double result))
             //            {
-            //                Inheritance.Circle circle = new Inheritance.Circle("Circle", result);
-            //                circle.GetName();
-            //                circle.GetArea();
-            //                circle.GetCircumference();
+            //                Inheritance.Circle circle1 = new Inheritance.Circle("Circle", result);
+            //                circle1.GetName();
+            //                circle1.GetArea();
+            //                circle1.GetCircumference();
             //            }
             //            else
             //            {
@@ -44,10 +45,10 @@ namespace NETInterrogation_Console_App
             //            string Width = Console.ReadLine();
             //            if (double.TryParse(Length, out double result1) && double.TryParse(Width, out double result2))
             //            {
-            //                Inheritance.Rectangle rectangle = new Inheritance.Rectangle("Reactangle", result1, result2);
-            //                rectangle.GetName();
-            //                rectangle.GetArea();
-            //                rectangle.GetPerimeter();
+            //                Inheritance.Rectangle rectangle1 = new Inheritance.Rectangle("Reactangle", result1, result2);
+            //                rectangle1.GetName();
+            //                rectangle1.GetArea();
+            //                rectangle1.GetPerimeter();
             //            }
             //            else
             //            {
@@ -59,10 +60,10 @@ namespace NETInterrogation_Console_App
             //            string Length1 = Console.ReadLine();
             //            if (double.TryParse(Length1, out double result3))
             //            {
-            //                Inheritance.Rectangle rectangle = new Inheritance.Rectangle("Square", result3, result3);
-            //                rectangle.GetName();
-            //                rectangle.GetArea();
-            //                rectangle.GetPerimeter();
+            //                Inheritance.Rectangle rectangle2 = new Inheritance.Rectangle("Square", result3, result3);
+            //                rectangle2.GetName();
+            //                rectangle2.GetArea();
+            //                rectangle2.GetPerimeter();
             //            }
             //            else
             //            {
@@ -224,6 +225,28 @@ namespace NETInterrogation_Console_App
             //Console.WriteLine("//////////////////////////////////////////////////////////////");
             //// Action Delegate
             //emp.Operation();
+            #endregion
+
+            #region Constructors
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("Defaut Constructor");
+            ConstructorTypes types = new ConstructorTypes();
+            Console.WriteLine($"Car: {types.Year} {types.Make} {types.Model}");
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("Parameterized Constructor");
+            ConstructorTypes car = new ConstructorTypes("Toyota", "Camry", 2020);
+            Console.WriteLine($"Car: {car.Year} {car.Make} {car.Model}");
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("Copied Constructor");
+            ConstructorTypes copiedCar = new ConstructorTypes(car);
+            Console.WriteLine($"Copied Car: {copiedCar.Year} {copiedCar.Make} {copiedCar.Model}");
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("Private Constructor");
+            ConstructorTypes.GetInstance();
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("Static Constructor");
+            Console.WriteLine($"Count: {ConstructorTypes.Count}");
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////");
             #endregion
         }
 

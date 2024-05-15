@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NETInterrogation_Console_App.Inheritance
+﻿namespace NETInterrogation_Console_App.Inheritance
 {
     public class Circle: Feature
     {
