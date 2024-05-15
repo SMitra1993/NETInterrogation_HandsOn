@@ -248,8 +248,10 @@ namespace NETInterrogation_Console_App
             Console.WriteLine($"Count: {ConstructorTypes.Count}");
             Console.WriteLine("////////////////////////////////////////////////////////////////////////");
             Console.WriteLine("Constructor Overloading");
-            ConstructorTypes area = new ConstructorTypes(7,8);
-            Console.WriteLine($"Area: {area.CalculateArea()}");
+            ConstructorTypes area1 = new ConstructorTypes(7,8);
+            Console.WriteLine($"Area 1: {area1.CalculateArea()}");
+            ConstructorTypes area2 = new ConstructorTypes(8);
+            Console.WriteLine($"Area 2: {area2.CalculateArea()}; Width: {area2.Width}; Height: {area2.Height}");
             Console.WriteLine("////////////////////////////////////////////////////////////////////////");
             #endregion
         }

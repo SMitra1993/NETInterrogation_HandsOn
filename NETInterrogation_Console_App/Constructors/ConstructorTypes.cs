@@ -77,10 +77,9 @@ namespace NETInterrogation_Console_App.Constructors
         }
 
         // Constructor with different number of arguments
-        public ConstructorTypes(double width)
+        public ConstructorTypes(double width): this(width, 10)
         {
             Width = width;
-            Height = width; // Square by default
         }
 
         // Method to calculate area
