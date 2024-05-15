@@ -61,7 +61,7 @@ namespace NETInterrogation_Console_App.Constructors
         static ConstructorTypes()
         {
             Count = 100;
-            Console.WriteLine("Static constructor invoked.");
+            Console.WriteLine("***Static constructor invoked.***");
         }
         #endregion
     }

@@ -229,7 +229,7 @@ namespace NETInterrogation_Console_App
 
             #region Constructors
             Console.WriteLine("////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Defaut Constructor");
+            Console.WriteLine("Default Constructor");
             ConstructorTypes types = new ConstructorTypes();
             Console.WriteLine($"Car: {types.Year} {types.Make} {types.Model}");
             Console.WriteLine("////////////////////////////////////////////////////////////////////////");
