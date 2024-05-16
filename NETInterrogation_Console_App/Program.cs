@@ -4,6 +4,7 @@ using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
 using NETInterrogation_Console_App.Shallow_Deep_Copy;
 using NETInterrogation_Console_App.Static_Class;
+using System.Drawing;
 
 namespace NETInterrogation_Console_App
 {
@@ -254,7 +255,46 @@ namespace NETInterrogation_Console_App
             //Console.WriteLine($"Area 2: {area2.CalculateArea()}; Width: {area2.Width}; Height: {area2.Height}");
             //Console.WriteLine("////////////////////////////////////////////////////////////////////////");
             #endregion
+
+            #region Structure
+            Console.WriteLine("Adding non-static method to Struct");
+
+            Structure.Point1 point1 = new Structure.Point1(10, 7);
+
+            // Not recommended as Structs are considered immutable
+            // p1.x = 10;
+            // p1.y = 7;
+
+            Structure.Point1 point2 = new Structure.Point1(6, 8);
+
+            // Display the coordinates of the points
+            Console.WriteLine($"Point 1: ({point1.x}, {point1.y})");
+            Console.WriteLine($"Point 2: ({point2.x}, {point2.y})");
+
+            // Calculate and display the distance between the points
+            double distance1 = point1.DistanceTo(point2);
+            Console.WriteLine($"Distance between the points: {Math.Round(distance1, 2)}");
+
+
+            ///////////////////////////////////////////////////////////////////////////////
+            Console.WriteLine("///////////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("Adding static method to Struct");
+
+            Structure.Point2 point3 = new Structure.Point2 { x = 10, y = 7 };
+
+            Structure.Point2 point4 = new Structure.Point2 { x = 6, y = 8 };
+
+            // Display the coordinates of the points
+            Console.WriteLine($"Point 1: ({point3.x}, {point3.y})");
+            Console.WriteLine($"Point 2: ({point4.x}, {point4.y})");
+
+            // Calculate and display the distance between the points
+            double distance2 = Structure.Point2.DistanceTo(point3, point4);
+            Console.WriteLine($"Distance between the points: {Math.Round(distance2, 2)}");
+
+            #endregion
         }
+
 
 
     }
