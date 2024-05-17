@@ -447,7 +447,30 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region LinkedList
-
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("************Hash Set*************");
+            //Console.WriteLine("*********************************");
+            //LinkedListClass linkedList = new LinkedListClass();
+            //linkedList.AddToLinkedList();
+            //Console.WriteLine("*********************************");
+            //linkedList.TotalTaskCount();
+            //Console.WriteLine("*********************************");
+            //linkedList.AddTaskUsingAddFirst();
+            //Console.WriteLine("*********************************");
+            //linkedList.RemoveTask();
+            //Console.WriteLine("*********************************");
+            //linkedList.FindTask();
+            //Console.WriteLine("*********************************");
+            //linkedList.AddTasksUsingAddAfter();
+            //Console.WriteLine("*********************************");
+            //linkedList.RemoveFirstTask();
+            //Console.WriteLine("*********************************");
+            //linkedList.RemoveLastTask();
+            //Console.WriteLine("*********************************");
+            //linkedList.InitializeLinkedList();
+            //Console.WriteLine("*********************************");
+            //linkedList.ClearTask();
+            //Console.WriteLine("*********************************");
             #endregion
         }
 
