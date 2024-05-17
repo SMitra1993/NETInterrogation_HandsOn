@@ -104,6 +104,5 @@ namespace NETInterrogation_Console_App.Namespaces
             students.Clear();
             Console.WriteLine($"Total students after clearing: {students.Count}");
         }
-
     }
 }
