@@ -95,5 +95,48 @@ namespace NETInterrogation_Console_App.Namespaces
                 Console.WriteLine(id);
             }
         }
+
+        // Using the IntersectWith method to find common employee IDs
+        public void FindEmployeesUsingIntersectWith()
+        {
+            int[] existingIDs = { 102, 103, 301 };
+            employeeIDs.IntersectWith(existingIDs);
+            Console.WriteLine("Employee IDs after IntersectWith:");
+            foreach (int id in employeeIDs)
+            {
+                Console.WriteLine(id);
+            }
+        }
+
+        // Using the ExceptWith method to remove a set of employee IDs
+        public void RemoveEmployeesUsingExceptWith()
+        {
+            int[] idsToRemove = { 102, 301 };
+            employeeIDs.ExceptWith(idsToRemove);
+            Console.WriteLine("Employee IDs after ExceptWith:");
+            foreach (int id in employeeIDs)
+            {
+                Console.WriteLine(id);
+            }
+        }
+
+        // Using the SymmetricExceptWith method to keep only unique employee IDs from two sets
+        public void GetUniqueEmployeesUsingSymmetricExceptWith()
+        {
+            int[] otherIDs = { 103, 302, 304 };
+            employeeIDs.SymmetricExceptWith(otherIDs);
+            Console.WriteLine("Employee IDs after SymmetricExceptWith:");
+            foreach (int id in employeeIDs)
+            {
+                Console.WriteLine(id);
+            }
+        }
+
+        // Clearing all employee records using the Clear method
+        public void ClearEmployeeList()
+        {
+            employeeIDs.Clear();
+            Console.WriteLine($"Total employee IDs after clearing: {employeeIDs.Count}");
+        }
     }
 }

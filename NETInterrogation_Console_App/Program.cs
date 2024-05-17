@@ -414,6 +414,39 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region HashSet
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("************Hash Set*************");
+            //Console.WriteLine("*********************************");
+            //HashSetClass hashSet = new HashSetClass();
+            //hashSet.AddToHashSet();
+            //Console.WriteLine("*********************************");
+            //hashSet.TotalEmployeeCount();
+            //Console.WriteLine("*********************************");
+            //hashSet.RemoveEmployee();
+            //Console.WriteLine("*********************************");
+            //hashSet.AccessEmployeeName();
+            //Console.WriteLine("*********************************");
+            //hashSet.DisplayEmployeesUsingGetEnumerator();
+            //Console.WriteLine("*********************************");
+            //hashSet.InitializeHashSetUsingIEnumerable();
+            //Console.WriteLine("*********************************");
+            //hashSet.InitializeHashSetUsingIEqualityComparer();
+            //Console.WriteLine("*********************************");
+            //hashSet.InitializeHashSetUsingIEqualityComparerIEnumerable();
+            //Console.WriteLine("*********************************");
+            //hashSet.AddEmployeesUsingUnionWith();
+            //Console.WriteLine("*********************************");
+            //hashSet.FindEmployeesUsingIntersectWith();
+            //Console.WriteLine("*********************************");
+            //hashSet.RemoveEmployeesUsingExceptWith();
+            //Console.WriteLine("*********************************");
+            //hashSet.GetUniqueEmployeesUsingSymmetricExceptWith();
+            //Console.WriteLine("*********************************");
+            //hashSet.ClearEmployeeList();
+            //Console.WriteLine("*********************************");
+            #endregion
+
+            #region LinkedList
 
             #endregion
         }
