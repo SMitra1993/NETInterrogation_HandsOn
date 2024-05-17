@@ -9,6 +9,7 @@ namespace NETInterrogation_Console_App.Namespaces
 {
     public class HashTableClass
     {
+        // Using the default constructor to create an empty Hashtable
         Hashtable employeeTable = new Hashtable();
 
         // Adding employee records using the Add method

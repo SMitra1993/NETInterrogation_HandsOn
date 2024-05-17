@@ -8,6 +8,7 @@ namespace NETInterrogation_Console_App.Namespaces
 {
     public class LinkedListClass
     {
+        // Using the default constructor to create an empty LinkedList
         LinkedList<string> tasks = new LinkedList<string>();
 
         // Adding employee IDs using the Add method

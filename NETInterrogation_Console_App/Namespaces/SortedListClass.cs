@@ -10,6 +10,7 @@ namespace NETInterrogation_Console_App.Namespaces
 {
     public class SortedListClass
     {
+        // Using the default constructor to create an empty SortedList
         SortedList employeeList = new SortedList();
 
         // Adding employee records using the Add method
