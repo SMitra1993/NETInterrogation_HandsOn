@@ -2,6 +2,7 @@
 using NETInterrogation_Console_App.Constructors;
 using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
+using NETInterrogation_Console_App.Namespaces;
 using NETInterrogation_Console_App.Shallow_Deep_Copy;
 using NETInterrogation_Console_App.Static_Class;
 using System.Drawing;
@@ -257,41 +258,159 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region Structure
-            Console.WriteLine("Adding non-static method to Struct");
+            //Console.WriteLine("Adding non-static method to Struct");
 
-            Structure.Point1 point1 = new Structure.Point1(10, 7);
+            //Structure.Point1 point1 = new Structure.Point1(10, 7);
 
-            // Not recommended as Structs are considered immutable
-            // p1.x = 10;
-            // p1.y = 7;
+            //// Not recommended as Structs are considered immutable
+            //// p1.x = 10;
+            //// p1.y = 7;
 
-            Structure.Point1 point2 = new Structure.Point1(6, 8);
+            //Structure.Point1 point2 = new Structure.Point1(6, 8);
 
-            // Display the coordinates of the points
-            Console.WriteLine($"Point 1: ({point1.x}, {point1.y})");
-            Console.WriteLine($"Point 2: ({point2.x}, {point2.y})");
+            //// Display the coordinates of the points
+            //Console.WriteLine($"Point 1: ({point1.x}, {point1.y})");
+            //Console.WriteLine($"Point 2: ({point2.x}, {point2.y})");
 
-            // Calculate and display the distance between the points
-            double distance1 = point1.DistanceTo(point2);
-            Console.WriteLine($"Distance between the points: {Math.Round(distance1, 2)}");
+            //// Calculate and display the distance between the points
+            //double distance1 = point1.DistanceTo(point2);
+            //Console.WriteLine($"Distance between the points: {Math.Round(distance1, 2)}");
 
 
-            ///////////////////////////////////////////////////////////////////////////////
-            Console.WriteLine("///////////////////////////////////////////////////////////////////////////////");
-            Console.WriteLine("Adding static method to Struct");
+            /////////////////////////////////////////////////////////////////////////////////
+            //Console.WriteLine("///////////////////////////////////////////////////////////////////////////////");
+            //Console.WriteLine("Adding static method to Struct");
 
-            Structure.Point2 point3 = new Structure.Point2 { x = 10, y = 7 };
+            //Structure.Point2 point3 = new Structure.Point2 { x = 10, y = 7 };
 
-            Structure.Point2 point4 = new Structure.Point2 { x = 6, y = 8 };
+            //Structure.Point2 point4 = new Structure.Point2 { x = 6, y = 8 };
 
-            // Display the coordinates of the points
-            Console.WriteLine($"Point 1: ({point3.x}, {point3.y})");
-            Console.WriteLine($"Point 2: ({point4.x}, {point4.y})");
+            //// Display the coordinates of the points
+            //Console.WriteLine($"Point 1: ({point3.x}, {point3.y})");
+            //Console.WriteLine($"Point 2: ({point4.x}, {point4.y})");
 
-            // Calculate and display the distance between the points
-            double distance2 = Structure.Point2.DistanceTo(point3, point4);
-            Console.WriteLine($"Distance between the points: {Math.Round(distance2, 2)}");
+            //// Calculate and display the distance between the points
+            //double distance2 = Structure.Point2.DistanceTo(point3, point4);
+            //Console.WriteLine($"Distance between the points: {Math.Round(distance2, 2)}");
+            #endregion
 
+            #region Stack
+            Console.WriteLine("*********************************");
+            Console.WriteLine("*********************************");
+            Console.WriteLine("**************Stack**************");
+            Console.WriteLine("*********************************");
+            StackClass stack = new StackClass();
+            stack.AddToStack();
+            Console.WriteLine("*********************************");
+            stack.TotalStackCount();
+            Console.WriteLine("*********************************");
+            stack.PeekIntoStack();
+            Console.WriteLine("*********************************");
+            stack.PopOutTask();
+            Console.WriteLine("*********************************");
+            stack.CheckForExistingTask();
+            Console.WriteLine("*********************************");
+            stack.ConvertFromStackToArray();
+            Console.WriteLine("*********************************");
+            stack.ConvertFromArrayToStack();
+            Console.WriteLine("*********************************");
+            stack.ClearStack();
+            Console.WriteLine("*********************************");
+            #endregion
+
+            #region Queue
+            Console.WriteLine("*********************************");
+            Console.WriteLine("**************Queue**************");
+            Console.WriteLine("*********************************");
+            QueueClass queue = new QueueClass();
+            queue.AddToQueue();
+            Console.WriteLine("*********************************");
+            queue.TotalQueueCount();
+            Console.WriteLine("*********************************");
+            queue.PeekIntoQueue();
+            Console.WriteLine("*********************************");
+            queue.PopOutCustomer();
+            Console.WriteLine("*********************************");
+            queue.CheckForExistingCustomer();
+            Console.WriteLine("*********************************");
+            queue.ConvertFromQueueToArray();
+            Console.WriteLine("*********************************");
+            queue.ConvertFromArrayToQueue();
+            Console.WriteLine("*********************************");
+            queue.ClearQueue();
+            Console.WriteLine("*********************************");
+            #endregion
+
+            #region HashTable
+            Console.WriteLine("*********************************");
+            Console.WriteLine("************Hash Table***********");
+            Console.WriteLine("*********************************");
+            HashTableClass hashTable = new HashTableClass();
+            hashTable.AddToHashTable();
+            Console.WriteLine("*********************************");
+            hashTable.GetKeysValues();
+            Console.WriteLine("*********************************");
+            hashTable.CloneHashTable();
+            Console.WriteLine("*********************************");
+            hashTable.TotalEmployeeCount();
+            Console.WriteLine("*********************************");
+            hashTable.AccessEmployeeName();
+            Console.WriteLine("*********************************");
+            hashTable.RemoveEmployee();
+            Console.WriteLine("*********************************");
+            hashTable.CheckForExistingEmployeeUsingKey();
+            Console.WriteLine("*********************************");
+            hashTable.CheckForExistingEmployeeUsingValue();
+            Console.WriteLine("*********************************");
+            hashTable.ConvertFromHashTableToDictionary();
+            Console.WriteLine("*********************************");
+            hashTable.ConvertFromDictionaryToHashTable();
+            Console.WriteLine("*********************************");
+            hashTable.ClearEmployeeList();
+            Console.WriteLine("*********************************");
+            hashTable.SetInitialCapacity();
+            Console.WriteLine("*********************************");
+            hashTable.SetInitialCapacityWithLoadFactor();
+            Console.WriteLine("*********************************");
+            hashTable.SetInitialCapacityWithIEqualityComparer();
+            Console.WriteLine("*********************************");
+            #endregion
+
+            #region SortedList
+            Console.WriteLine("*********************************");
+            Console.WriteLine("**********Sorted List************");
+            Console.WriteLine("*********************************");
+            SortedListClass sortedList = new SortedListClass();
+            sortedList.AddToSortedList();
+            Console.WriteLine("*********************************");
+            sortedList.GetKeysValues();
+            Console.WriteLine("*********************************");
+            sortedList.CloneSortedList();
+            Console.WriteLine("*********************************");
+            sortedList.TotalEmployeeCount();
+            Console.WriteLine("*********************************");
+            sortedList.AccessEmployeeName();
+            Console.WriteLine("*********************************");
+            sortedList.RemoveEmployee();
+            Console.WriteLine("*********************************");
+            sortedList.CheckForExistingEmployeeUsingKey();
+            Console.WriteLine("*********************************");
+            sortedList.CheckForExistingEmployeeUsingValue();
+            Console.WriteLine("*********************************");
+            sortedList.AccessEmployeeUsingGetByIndex();
+            Console.WriteLine("*********************************");
+            sortedList.AccessEmployeeUsingGetKey();
+            Console.WriteLine("*********************************");
+            sortedList.ConvertFromDictionaryToSortedList();
+            Console.WriteLine("*********************************");
+            sortedList.SetInitialCapacity();
+            Console.WriteLine("*********************************");
+            sortedList.SetInitialCapacityWithIComparer();
+            Console.WriteLine("*********************************");
+            sortedList.SetInitialCapacityWithIDictionaryIComparer();
+            Console.WriteLine("*********************************");
+            sortedList.ClearEmployeeList();
+            Console.WriteLine("*********************************");
             #endregion
         }
 
