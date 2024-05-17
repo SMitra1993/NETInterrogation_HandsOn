@@ -472,6 +472,33 @@ namespace NETInterrogation_Console_App
             //linkedList.ClearTask();
             //Console.WriteLine("*********************************");
             #endregion
+
+            #region List
+            Console.WriteLine("*********************************");
+            Console.WriteLine("**************List***************");
+            Console.WriteLine("*********************************");
+            ListClass list = new ListClass();
+            list.AddToList();
+            Console.WriteLine("*********************************");
+            list.TotalStudentCount();
+            Console.WriteLine("*********************************");
+            list.AddStudentAtSpecificPosition();
+            Console.WriteLine("*********************************");
+            list.RemoveStudent();
+            Console.WriteLine("*********************************");
+            list.FindStudent();
+            Console.WriteLine("*********************************");
+            list.CheckIfStudentExist();
+            Console.WriteLine("*********************************");
+            list.SortStudents();
+            Console.WriteLine("*********************************");
+            list.RemoveAtSpecificPosition();
+            Console.WriteLine("*********************************");
+            list.InitializeNewList();
+            Console.WriteLine("*********************************");
+            list.ClearStudent();
+            Console.WriteLine("*********************************");
+            #endregion
         }
 
 
