@@ -499,6 +499,31 @@ namespace NETInterrogation_Console_App
             //list.ClearStudent();
             //Console.WriteLine("*********************************");
             #endregion
+
+            #region Dictionary
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("***********Dictionary************");
+            //Console.WriteLine("*********************************");
+            //DictionaryClass dictionary = new DictionaryClass();
+            //dictionary.AddToDictionary();
+            //Console.WriteLine("*********************************");
+            //dictionary.TotalStudentCount();
+            //Console.WriteLine("*********************************");
+            //dictionary.CheckIfStudentExist();
+            //Console.WriteLine("*********************************");
+            //dictionary.GetGradesOfStudent();
+            //Console.WriteLine("*********************************");
+            //dictionary.UpdateGradeOfStudent();
+            //Console.WriteLine("*********************************");
+            //dictionary.RemoveStudent();
+            //Console.WriteLine("*********************************");
+            //dictionary.InitializeDictionary();
+            //Console.WriteLine("*********************************");
+            //dictionary.GetKeysAndValues();
+            //Console.WriteLine("*********************************");
+            //dictionary.ClearStudent();
+            //Console.WriteLine("*********************************");
+            #endregion
         }
 
 
