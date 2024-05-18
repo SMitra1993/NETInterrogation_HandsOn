@@ -2,6 +2,7 @@
 using NETInterrogation_Console_App.Constructors;
 using NETInterrogation_Console_App.Encapsulation;
 using NETInterrogation_Console_App.Inheritance;
+using NETInterrogation_Console_App.MultiThreading;
 using NETInterrogation_Console_App.Namespaces;
 using NETInterrogation_Console_App.Shallow_Deep_Copy;
 using NETInterrogation_Console_App.Static_Class;
@@ -552,40 +553,61 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region BitArray
-            Console.WriteLine("*********************************");
-            Console.WriteLine("************BitArray*************");
-            Console.WriteLine("*********************************");
-            BitArrayClass bitArray = new BitArrayClass();
-            bitArray.CreateBitArrayFromBool();
-            Console.WriteLine("*********************************");
-            bitArray.CreateBitArrayFromInt();
-            Console.WriteLine("*********************************");
-            bitArray.CreateBitArrayFromAnother();
-            Console.WriteLine("*********************************");
-            bitArray.DisplayInitialFlag();
-            Console.WriteLine("*********************************");
-            bitArray.DisplayFlagFromArray();
-            Console.WriteLine("*********************************");
-            bitArray.DisplayFlagFromInt();
-            Console.WriteLine("*********************************");
-            bitArray.DisplayCopiedFlag();
-            Console.WriteLine("*********************************");
-            bitArray.GetSetBitArrayLength();
-            Console.WriteLine("*********************************");
-            bitArray.GetIndividualBits();
-            Console.WriteLine("*********************************");
-            bitArray.SetIndividualBits();
-            Console.WriteLine("*********************************");
-            bitArray.InvertAllBits();
-            Console.WriteLine("*********************************");
-            bitArray.PerformBitwiseANDOperation();
-            Console.WriteLine("*********************************");
-            bitArray.PerformBitwiseOROperation();
-            Console.WriteLine("*********************************");
-            bitArray.PerformBitwiseXOROperation();
-            Console.WriteLine("*********************************");
-            bitArray.CopyBitArrayToArray();
-            Console.WriteLine("*********************************");
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("************BitArray*************");
+            //Console.WriteLine("*********************************");
+            //BitArrayClass bitArray = new BitArrayClass();
+            //bitArray.CreateBitArrayFromBool();
+            //Console.WriteLine("*********************************");
+            //bitArray.CreateBitArrayFromInt();
+            //Console.WriteLine("*********************************");
+            //bitArray.CreateBitArrayFromAnother();
+            //Console.WriteLine("*********************************");
+            //bitArray.DisplayInitialFlag();
+            //Console.WriteLine("*********************************");
+            //bitArray.DisplayFlagFromArray();
+            //Console.WriteLine("*********************************");
+            //bitArray.DisplayFlagFromInt();
+            //Console.WriteLine("*********************************");
+            //bitArray.DisplayCopiedFlag();
+            //Console.WriteLine("*********************************");
+            //bitArray.GetSetBitArrayLength();
+            //Console.WriteLine("*********************************");
+            //bitArray.GetIndividualBits();
+            //Console.WriteLine("*********************************");
+            //bitArray.SetIndividualBits();
+            //Console.WriteLine("*********************************");
+            //bitArray.InvertAllBits();
+            //Console.WriteLine("*********************************");
+            //bitArray.PerformBitwiseANDOperation();
+            //Console.WriteLine("*********************************");
+            //bitArray.PerformBitwiseOROperation();
+            //Console.WriteLine("*********************************");
+            //bitArray.PerformBitwiseXOROperation();
+            //Console.WriteLine("*********************************");
+            //bitArray.CopyBitArrayToArray();
+            //Console.WriteLine("*********************************");
+            #endregion
+
+            #region MultiThreading
+            
+            // Creating and starting the first thread
+            Thread thread1 = new Thread(MultiThreadings.PrintNumbers);
+            thread1.Start();
+
+            // Creating and starting the second thread
+            Thread thread2 = new Thread(MultiThreadings.PrintLetters);
+            thread2.Start();
+
+            try
+            {
+                MultiThreadings.ReadFile();
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
             #endregion
         }
 
