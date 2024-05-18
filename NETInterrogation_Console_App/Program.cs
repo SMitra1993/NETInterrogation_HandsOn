@@ -550,6 +550,43 @@ namespace NETInterrogation_Console_App
             //dictionary.ClearStudent();
             //Console.WriteLine("*********************************");
             #endregion
+
+            #region BitArray
+            Console.WriteLine("*********************************");
+            Console.WriteLine("************BitArray*************");
+            Console.WriteLine("*********************************");
+            BitArrayClass bitArray = new BitArrayClass();
+            bitArray.CreateBitArrayFromBool();
+            Console.WriteLine("*********************************");
+            bitArray.CreateBitArrayFromInt();
+            Console.WriteLine("*********************************");
+            bitArray.CreateBitArrayFromAnother();
+            Console.WriteLine("*********************************");
+            bitArray.DisplayInitialFlag();
+            Console.WriteLine("*********************************");
+            bitArray.DisplayFlagFromArray();
+            Console.WriteLine("*********************************");
+            bitArray.DisplayFlagFromInt();
+            Console.WriteLine("*********************************");
+            bitArray.DisplayCopiedFlag();
+            Console.WriteLine("*********************************");
+            bitArray.GetSetBitArrayLength();
+            Console.WriteLine("*********************************");
+            bitArray.GetIndividualBits();
+            Console.WriteLine("*********************************");
+            bitArray.SetIndividualBits();
+            Console.WriteLine("*********************************");
+            bitArray.InvertAllBits();
+            Console.WriteLine("*********************************");
+            bitArray.PerformBitwiseANDOperation();
+            Console.WriteLine("*********************************");
+            bitArray.PerformBitwiseOROperation();
+            Console.WriteLine("*********************************");
+            bitArray.PerformBitwiseXOROperation();
+            Console.WriteLine("*********************************");
+            bitArray.CopyBitArrayToArray();
+            Console.WriteLine("*********************************");
+            #endregion
         }
 
 
