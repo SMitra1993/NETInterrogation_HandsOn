@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace NETInterrogation_Console_App.Namespaces
 {
-    public class DictionaryClass
+    public class SortedDictionaryClass
     {
-        // Using the default constructor to create an empty Dictionary
-        Dictionary<string, double> studentGrades = new Dictionary<string, double>();
+        // Using the default constructor to create an empty SortedDictionary
+        SortedDictionary<string, double> studentGrades = new SortedDictionary<string, double>();
 
         // Adding students and their grades using Add method
-        public void AddToDictionary()
+        public void AddToSortedDictionary()
         {
             studentGrades.Add("John Doe", 85.5);
             studentGrades.Add("Jane Smith", 92.3);

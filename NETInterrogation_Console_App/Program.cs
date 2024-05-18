@@ -5,6 +5,7 @@ using NETInterrogation_Console_App.Inheritance;
 using NETInterrogation_Console_App.Namespaces;
 using NETInterrogation_Console_App.Shallow_Deep_Copy;
 using NETInterrogation_Console_App.Static_Class;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace NETInterrogation_Console_App
@@ -506,6 +507,31 @@ namespace NETInterrogation_Console_App
             //Console.WriteLine("*********************************");
             //DictionaryClass dictionary = new DictionaryClass();
             //dictionary.AddToDictionary();
+            //Console.WriteLine("*********************************");
+            //dictionary.TotalStudentCount();
+            //Console.WriteLine("*********************************");
+            //dictionary.CheckIfStudentExist();
+            //Console.WriteLine("*********************************");
+            //dictionary.GetGradesOfStudent();
+            //Console.WriteLine("*********************************");
+            //dictionary.UpdateGradeOfStudent();
+            //Console.WriteLine("*********************************");
+            //dictionary.RemoveStudent();
+            //Console.WriteLine("*********************************");
+            //dictionary.InitializeDictionary();
+            //Console.WriteLine("*********************************");
+            //dictionary.GetKeysAndValues();
+            //Console.WriteLine("*********************************");
+            //dictionary.ClearStudent();
+            //Console.WriteLine("*********************************");
+            #endregion
+
+            #region SortedDictionary
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("********SortedDictionary*********");
+            //Console.WriteLine("*********************************");
+            //SortedDictionaryClass dictionary = new SortedDictionaryClass();
+            //dictionary.AddToSortedDictionary();
             //Console.WriteLine("*********************************");
             //dictionary.TotalStudentCount();
             //Console.WriteLine("*********************************");
