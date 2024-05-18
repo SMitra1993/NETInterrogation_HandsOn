@@ -28,6 +28,7 @@ namespace NETInterrogation_Console_App.MultiThreading
             }
         }
 
+        #region Multitasking
         public static async void ReadFile()
         {
             string[] urls = {
@@ -50,5 +51,48 @@ namespace NETInterrogation_Console_App.MultiThreading
                 }
             }
         }
+        #endregion
+
+        #region Foreground Thread
+        public static void ForegroundTrigger()
+        {
+            // Create a new thread that will execute the method Worker
+            Thread thread = new Thread(Worker);
+            thread.Start();
+
+            // Main thread continues execution
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Main thread executing...");
+                Thread.Sleep(1000);
+            }
+        }
+
+        public static void Worker()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Worker thread executing...");
+                Thread.Sleep(1000);
+            }
+        }
+        #endregion
+
+        #region Background Thread
+        public static void BackgroundTrigger()
+        {
+            // Create a new thread that will execute the method Worker
+            Thread thread = new Thread(Worker);
+            thread.IsBackground = true;
+            thread.Start();
+
+            // Main thread continues execution
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Main thread executing...");
+                Thread.Sleep(1000);
+            }
+        }
+        #endregion
     }
 }

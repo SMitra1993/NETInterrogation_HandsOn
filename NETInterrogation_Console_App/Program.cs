@@ -6,6 +6,7 @@ using NETInterrogation_Console_App.MultiThreading;
 using NETInterrogation_Console_App.Namespaces;
 using NETInterrogation_Console_App.Shallow_Deep_Copy;
 using NETInterrogation_Console_App.Static_Class;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 
@@ -590,24 +591,41 @@ namespace NETInterrogation_Console_App
             #endregion
 
             #region MultiThreading
-            
-            // Creating and starting the first thread
-            Thread thread1 = new Thread(MultiThreadings.PrintNumbers);
-            thread1.Start();
+            //// Creating and starting the first thread
+            //Thread thread1 = new Thread(MultiThreadings.PrintNumbers);
+            //thread1.Start();
 
-            // Creating and starting the second thread
-            Thread thread2 = new Thread(MultiThreadings.PrintLetters);
-            thread2.Start();
+            //// Creating and starting the second thread
+            //Thread thread2 = new Thread(MultiThreadings.PrintLetters);
+            //thread2.Start();
 
-            try
-            {
-                MultiThreadings.ReadFile();
-            }
-            catch (IOException e)
-            {
-                Console.WriteLine("The file could not be read:");
-                Console.WriteLine(e.Message);
-            }
+            //try
+            //{
+            //    MultiThreadings.ReadFile();
+            //}
+            //catch (IOException e)
+            //{
+            //    Console.WriteLine("The file could not be read:");
+            //    Console.WriteLine(e.Message);
+            //}
+
+            //try
+            //{
+            //    MultiThreadings.ForegroundTrigger();
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+
+            //try
+            //{
+            //    MultiThreadings.BackgroundTrigger();
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
             #endregion
         }
 
