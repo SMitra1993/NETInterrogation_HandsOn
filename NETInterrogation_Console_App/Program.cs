@@ -648,6 +648,29 @@ namespace NETInterrogation_Console_App
             //array.ClearStudentList();
             //Console.WriteLine("*********************************");
             #endregion
+
+            #region ArrayList
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("************ArrayList************");
+            //Console.WriteLine("*********************************");
+            //ArrayListClass arrayList = new ArrayListClass();
+            //arrayList.AddStudent();
+            //Console.WriteLine("*********************************");
+            //arrayList.InsertStudent();
+            //Console.WriteLine("*********************************");
+            //arrayList.DisplayList();
+            //Console.WriteLine("*********************************");
+            //arrayList.ModifyStudent();
+            //Console.WriteLine("*********************************");
+            //arrayList.RemoveStudent();
+            //Console.WriteLine("*********************************");
+            //arrayList.SearchForStudent();
+            //Console.WriteLine("*********************************");
+            //arrayList.SortStudentList();
+            //Console.WriteLine("*********************************");
+            //arrayList.IterateOverList();
+            //Console.WriteLine("*********************************");
+            #endregion
         }
 
 
