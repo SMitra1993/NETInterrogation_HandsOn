@@ -671,6 +671,25 @@ namespace NETInterrogation_Console_App
             //arrayList.IterateOverList();
             //Console.WriteLine("*********************************");
             #endregion
+
+            #region Jagged Array
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("**********Jagged Array***********");
+            //Console.WriteLine("*********************************");
+            //JaggedArrayClass arr = new JaggedArrayClass();
+            //arr.AddCourses();
+            //Console.WriteLine("*********************************");
+            //arr.ModifyClassSchedules();
+            //Console.WriteLine("*********************************");
+            //arr.DisplaySchedules();
+            //Console.WriteLine("*********************************");
+            //arr.TotalClassesPerCourse();
+            //Console.WriteLine("*********************************");
+            //arr.SearchSchedule();
+            //Console.WriteLine("*********************************");
+            //arr.ModifySchedule();
+            //Console.WriteLine("*********************************");
+            #endregion
         }
 
 
