@@ -627,6 +627,27 @@ namespace NETInterrogation_Console_App
             //    Console.WriteLine(e.Message);
             //}
             #endregion
+
+            #region Array
+            //Console.WriteLine("*********************************");
+            //Console.WriteLine("**************Array**************");
+            //Console.WriteLine("*********************************");
+            //ArrayClass array = new ArrayClass();
+            //array.AddToArray();
+            //Console.WriteLine("*********************************");
+            //array.DisplayStudentList();
+            //Console.WriteLine("*********************************");
+            //array.SortArrayUsingCustomCoparaer();
+            //Console.WriteLine("*********************************");
+            //array.SearchStudent();
+            //Console.WriteLine("*********************************");
+            //array.CloneStudentList();
+            //Console.WriteLine("*********************************");
+            //array.ResizeList();
+            //Console.WriteLine("*********************************");
+            //array.ClearStudentList();
+            //Console.WriteLine("*********************************");
+            #endregion
         }
 
 
